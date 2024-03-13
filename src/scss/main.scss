@@ -1,9 +1,5 @@
-@import 'reset-css';
-
-//canvas {
-//  position: absolute;
-//  top: 0;
-//  left: 0;
-//  right: 0;
-//  bottom: 0;
-//}
+canvas {
+  margin: 3rem auto auto;
+  display: block;
+  box-shadow: 2px 2px 4px 4px rgba(203, 203, 203, 0.49);
+}
