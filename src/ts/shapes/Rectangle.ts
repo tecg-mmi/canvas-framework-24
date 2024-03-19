@@ -1,9 +1,9 @@
 import {Shape} from "./Shape";
 
 export class Rectangle extends Shape {
-    private w: number;
-    private h: number;
-    private degree: number;
+    private readonly w: number;
+    private readonly h: number;
+    private readonly degree: number;
 
     constructor(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, degree: number, color: string) {
         super(ctx, color, x, y);
