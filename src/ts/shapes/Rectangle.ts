@@ -1,21 +1,15 @@
-export class Rectangle {
-    private readonly ctx: CanvasRenderingContext2D;
-    private x: number;
-    private y: number;
+import {Shape} from "./Shape";
+
+export class Rectangle extends Shape {
     private w: number;
     private h: number;
-    private color: string;
     private degree: number;
 
-
     constructor(ctx: CanvasRenderingContext2D, x: number, y: number, w: number, h: number, degree: number, color: string) {
-        this.ctx = ctx;
-        this.x = x;
-        this.y = y;
+        super(ctx, color, x, y);
         this.w = w;
         this.h = h;
         this.degree = degree;
-        this.color = color;
     }
 
     public draw() {
