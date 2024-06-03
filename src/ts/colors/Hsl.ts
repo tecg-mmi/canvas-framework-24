@@ -5,13 +5,11 @@ export class Hsl implements IColor {
     private _saturation: number;
     private _lightness: number;
 
-
     constructor(hue: number, saturation: number, lightness: number) {
         this._hue = hue;
         this._saturation = saturation;
         this._lightness = lightness;
     }
-
 
     set hue(value: number) {
         this._hue = Math.max(0, Math.min(value, 360));

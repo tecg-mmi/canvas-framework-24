@@ -1,6 +1,6 @@
 import {Shape} from "./Shape";
 import {IColor} from "../types/IColor";
-import {IPosition} from "../types/iPosition";
+import {IPosition} from "../types/IPosition";
 import {IRectangle} from "../types/IRectangle";
 
 export class Triangle extends Shape implements IRectangle {
@@ -43,6 +43,4 @@ export class Triangle extends Shape implements IRectangle {
         }
         this.ctx.restore();
     }
-
-
 }

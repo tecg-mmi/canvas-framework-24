@@ -1,4 +1,4 @@
-import {IPosition} from "./iPosition";
+import {IPosition} from "./IPosition";
 
 export interface IRectangle {
     position: IPosition,

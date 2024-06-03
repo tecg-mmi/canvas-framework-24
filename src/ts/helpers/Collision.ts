@@ -1,4 +1,4 @@
-import {IPosition} from "../types/iPosition";
+import {IPosition} from "../types/IPosition";
 import {IRectangle} from "../types/IRectangle";
 import {ICircle} from "../types/ICircle";
 
@@ -17,7 +17,6 @@ export class Collision {
             rect1.position.x > rect2.position.x + rect2.width ||
             rect1.position.y > rect2.position.y + rect2.height);
     }
-
 
     /**
      * Vérifie si un point est à l'intérieur d'un rectangle donné.
@@ -44,7 +43,6 @@ export class Collision {
         const dy = point.y - circle.position.y;
         return dx * dx + dy * dy <= circle.radius * circle.radius;
     }
-
 
     /**
      * Replace un objet IRectangle à l'intérieur du canevas si celui-ci sort du canvas.
@@ -96,6 +94,4 @@ export class Collision {
         }
         return point.x < 0 || point.x > canvas.width || point.y < 0 || point.y > canvas.height;
     }
-
-
 }

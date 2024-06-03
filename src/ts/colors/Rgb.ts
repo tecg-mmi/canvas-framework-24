@@ -15,7 +15,6 @@ export class Rgb implements IColor {
         this.blue = blue;
     }
 
-
     set red(value: number) {
         this._red = Math.max(0, Math.min(value, 255));
     }
@@ -27,7 +26,6 @@ export class Rgb implements IColor {
     set blue(value: number) {
         this._blue = Math.max(0, Math.min(value, 255));
     }
-
 
     get red(): number {
         return this._red;
