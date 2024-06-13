@@ -1,5 +1,5 @@
 import {IColor} from "../types/IColor";
-import {IPosition} from "../types/iPosition";
+import {IPosition} from "../types/IPosition";
 
 export abstract class Shape {
     protected readonly ctx: CanvasRenderingContext2D;
@@ -7,7 +7,6 @@ export abstract class Shape {
     public readonly position: IPosition;
     protected readonly isFilled: boolean;
     public orientation: number;
-
 
     protected constructor(ctx: CanvasRenderingContext2D, color: IColor, position: IPosition, degree: number, isFilled: boolean = true) {
         this.ctx = ctx;
@@ -17,7 +16,6 @@ export abstract class Shape {
         this.isFilled = isFilled;
         this.orientation = degree;
     }
-
 
     protected fillOrStroke() {
         this.ctx.fillStyle = this.color.toString();

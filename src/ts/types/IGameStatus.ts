@@ -4,5 +4,6 @@ export interface IGameStatus {
     win: boolean;
     score: number;
     lives: number;
+    startGame: () => void;
     endGame: () => void;
 }

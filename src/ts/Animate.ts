@@ -16,7 +16,6 @@ export class Animate {
         this.gameStatus = gameStatus;
     }
 
-
     public start() {
         this.animate()
     }
@@ -25,11 +24,9 @@ export class Animate {
         cancelAnimationFrame(this.registerForAnimationId);
     }
 
-
     public registerForAnimation(animated: IAnimatable) {
         this.iAnimates.push(animated);
     }
-
 
     private animate() {
         if (!this.gameStatus.isFinished) {

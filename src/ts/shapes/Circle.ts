@@ -1,16 +1,14 @@
 import {Shape} from "./Shape";
 import {IColor} from "../types/IColor";
-import {IPosition} from "../types/iPosition";
+import {IPosition} from "../types/IPosition";
 
 export class Circle extends Shape {
     protected readonly radius: number;
-
 
     constructor(ctx: CanvasRenderingContext2D, color: IColor, position: IPosition, degree: number, radius: number, isFilled: boolean = true) {
         super(ctx, color, position, degree, isFilled);
         this.radius = radius;
     }
-
 
     public draw() {
         this.ctx.beginPath();
@@ -28,7 +26,6 @@ export class Circle extends Shape {
         } else {
             // use stroke width to clear the circle
             this.ctx.clearRect(-this.radius - 1, -this.radius - 1, this.radius * 2 + 2, this.radius * 2 + 2);
-
         }
         this.ctx.restore();
     }
