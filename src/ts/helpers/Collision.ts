@@ -28,7 +28,7 @@ export class Collision {
      * @orientation - L'orientation du rectangle exprimée en radians, si spécifiée. Utilisée pour transformer le point avant la vérification.
      * @returns Vrai si le point est à l'intérieur du rectangle, sinon faux.
      */
-    static pointInRectangle(rect: IRectangle, point: IPosition, center?: IPosition, orientation?: number): boolean {
+    static isPointInRectangle(rect: IRectangle, point: IPosition, center?: IPosition, orientation?: number): boolean {
         if (center !== undefined && orientation !== undefined) {
             point = Collision.transformPoint(point, center, orientation);
         }
